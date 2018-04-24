@@ -12,12 +12,10 @@ spec:
     app: hexagons
     tier: db
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: db
-  annotations:
-    sidecar.istio.io/inject: "false"
 spec:
   selector:
     matchLabels:
