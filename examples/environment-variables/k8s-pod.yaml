@@ -5,5 +5,5 @@ metadata:
 spec:
   containers:
   - name: getting-started
-    image: gcr.io/k8s-skaffold/skaffold-example
+    image: eu.gcr.io/kubecon-eu-skaffold-demo/getting-started
     imagePullPolicy: IfNotPresent

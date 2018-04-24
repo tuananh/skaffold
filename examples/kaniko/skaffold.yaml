@@ -1,11 +1,13 @@
 apiVersion: skaffold/v1alpha2
 kind: Config
+
 build:
   artifacts:
-  - imageName: gcr.io/k8s-skaffold/skaffold-example
+  - imageName: eu.gcr.io/kubecon-eu-skaffold-demo/getting-started
   kaniko:
-    gcsBucket: k8s-skaffold
-    pullSecret: /a/secret/path/kaniko.json
+    gcsBucket: kubecon-eu-skaffold-demo
+    pullSecret: ~/secrets/kaniko/kubecon-eu-skaffold-demo.json
+
 deploy:
   kubectl:
     manifests:
