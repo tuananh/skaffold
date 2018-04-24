@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: getting-started
-    image: gcr.io/dga-demo/skaffold-example
+    image: eu.gcr.io/kubecon-eu-skaffold-demo/getting-started

@@ -23,8 +23,8 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/api/hexagons", handleErrors(hexagons))
 
-	fmt.Println("Listening on port 8080")
-	http.ListenAndServe(":8080", r)
+	fmt.Println("Listening on port 8888")
+	http.ListenAndServe(":8888", r)
 }
 
 func handleErrors(handler func(http.ResponseWriter, *http.Request) error) func(http.ResponseWriter, *http.Request) {

@@ -4,8 +4,7 @@ metadata:
   name: ui
 spec:
   ports:
-  - port: 8080
-    targetPort: 80
+  - port: 80
     name: http
   type: LoadBalancer
   selector:
@@ -31,6 +30,6 @@ spec:
     spec:
       containers:
       - name: ui
-        image: dgageot/hexagons-ui
+        image: eu.gcr.io/kubecon-eu-skaffold-demo/hexagons-ui
       - name: api
-        image: dgageot/hexagons-api
+        image: eu.gcr.io/kubecon-eu-skaffold-demo/hexagons-api

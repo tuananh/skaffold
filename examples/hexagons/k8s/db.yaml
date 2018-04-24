@@ -31,4 +31,4 @@ spec:
     spec:
       containers:
       - name: db
-        image: dgageot/hexagons-db
+        image: eu.gcr.io/kubecon-eu-skaffold-demo/hexagons-db

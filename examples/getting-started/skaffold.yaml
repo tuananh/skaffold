@@ -3,7 +3,7 @@ kind: Config
 
 build:
   artifacts:
-  - imageName: gcr.io/dga-demo/skaffold-example
+  - imageName: eu.gcr.io/kubecon-eu-skaffold-demo/getting-started
 
 deploy:
   kubectl:
@@ -14,4 +14,4 @@ profiles:
   - name: gcb
     build:
       googleCloudBuild:
-        projectId: dga-demo
+        projectId: kubecon-eu-skaffold-demo
